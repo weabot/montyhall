@@ -16,8 +16,8 @@ int main(int argc, char** argv) {
 		if(opendoors(initdoors())) ++wins;
 		else ++fails;
 		
-		system("clear");
 		++reps;
+		system("clear");
 		printf("Times complete: %d\nWins: %f (%f%%)\nFails: %f (%f%%)\n", reps, wins, (wins / reps) * 100, fails, (fails / reps) * 100);
 	}
 
