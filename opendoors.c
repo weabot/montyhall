@@ -5,10 +5,11 @@
  */
 
 #include <stdlib.h>
+#include <stdio.h>
 
-int opendoors(int* door) {
+int opendoors(short int* door, int vflag) {
 	//de1 and de2 contain door 0, df contains door 1.
-	int de1 = 3, de2=3, df, i;
+	short int de1 = 3, de2=3, df, i;
 	for(i = 0; i < 3; ++i) {
 		if(door[i]) df = 1;
 		else {
@@ -34,5 +35,12 @@ int opendoors(int* door) {
 	//if it's wrong, 0 will be returned
 	i = 0;
 	while(door[i++] == 2);
+	if(vflag) {
+		printf("Participant first chose door %d\nShow host opened door %d, revealing nothing\nParticipant changed his mind and picked door %d\nThe right door was door %d\n", pick, opened, i-1, df);
+		if(door[i-1]) printf("Participant won.");
+		else printf("Participant lost.");
+		putchar('\n');
+		putchar('\n');
+	}
 	return door[i - 1];
 }

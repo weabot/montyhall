@@ -6,8 +6,8 @@
 
 #include <stdlib.h>
 
-int* initdoors() {
-	static int door[3];
+short int* initdoors() {
+	static short int door[3];
 	int i;
 	door[0] = door[1] = door[2] = 0;
 	door[random() % 3] = 1;

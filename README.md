@@ -1,7 +1,11 @@
 #Simple reproduction of the Monty Hall problem
 
-Looks at the first argument to decide the amount of times it'll loop
+##Arguments
 
-defaults to 1 time if nothing is given
+-n x specifies the number of times you want it to loop. Defaults to 1 if it's not specified
 
-runs forever if 0 is given.
+-i makes it loop indefinitely. Overrides -n.
+
+-v makes it output what happens from a gameshow viewer's perspective.
+
+-c makes it so that it does not clear the terminal every loop.
