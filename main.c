@@ -5,10 +5,14 @@ int* initdoors();
 int opendoors(int*);
 
 int main(int argc, char** argv) {
-	int reps = 0, i = 0, limit, infinite = 0;
+	int reps = 0, i = 0, infinite = 0, limit;
 	double wins, fails;
+
+	//scans the first argument and sets the limit to it or to 1 if no argument was given
 	if(argc > 1) sscanf(argv[1], "%d", &limit);
 	else limit = 1;
+
+	//sets up the infinite loop
 	if(limit == 0) {
 		infinite = 1;
 		limit=1;
