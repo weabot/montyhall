@@ -8,7 +8,10 @@ int main(int argc, char** argv) {
 	double wins, fails;
 	if(argc > 1) sscanf(argv[1], "%d", &limit);
 	else limit = 1;
-	if(limit == 0) infinite = 1;
+	if(limit == 0) {
+		infinite = 1;
+		limit=1;
+	}
 
 	while(i <= limit-1) {
 		if(!infinite) ++i;
