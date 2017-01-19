@@ -10,7 +10,6 @@ int* initdoors() {
 	static int door[3];
 	int i;
 	door[0] = door[1] = door[2] = 0;
-	i = random() % 3;
-	door[i] = 1;
+	door[random() % 3] = 1;
 	return door;
 }
