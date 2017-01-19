@@ -3,6 +3,7 @@
  * returns 1 if the door was right
  * returns 0 if it wasn't
  */
+
 #include <stdlib.h>
 
 int opendoors(int* door) {
