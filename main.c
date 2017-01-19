@@ -47,11 +47,11 @@ short int initflags(int argc, char** argv, char* optstring, int *limit) {
 			case 'i': //infinite loop
 				flagret |= 1 << 1;
 				break;
-			case 'n': //number of loops
-				sscanf(optarg, "%d", limit);
-				break;
 			case 'c':
 				flagret |= 1 << 2;
+				break;
+			case 'n': //number of loops
+				sscanf(optarg, "%d", limit);
 				break;
 			default:
 				break;
