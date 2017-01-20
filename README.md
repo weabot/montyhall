@@ -8,4 +8,4 @@
 
 -v makes it output what happens from a gameshow viewer's perspective.
 
--c makes it so that it does not clear the terminal every loop.
+-c makes it clear the terminal every loop.
