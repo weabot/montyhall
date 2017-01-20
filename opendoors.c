@@ -9,7 +9,7 @@
 
 int opendoors(short int* door, int vflag) {
 	//de1 and de2 contain door 0, df contains door 1.
-	short int de1 = 3, de2=3, df, i;
+	int de1 = 3, de2=3, df, i;
 	for(i = 0; i < 3; ++i) {
 		if(door[i]) df = 1;
 		else {
