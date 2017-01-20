@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
 		if(!infinite) ++i;
 		++reps;
 		if(clear) system("clear");
-		else putchar('\n');
+		else if(i != 1) putchar('\n');
 
 		if(opendoors(initdoors(), vflag ? 1 : 0)) ++wins;
 		else ++fails;
