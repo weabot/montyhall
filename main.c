@@ -17,12 +17,12 @@ int main(int argc, char** argv) {
 	//set variables using initflags() results
 	int vflag = flags & 1;
 	int infinite = (flags >> 1) & 1; 
-	int noclear = (flags >> 2) & 1;
+	int clear = (flags >> 2) & 1;
 
 	while(i <= limit-1) {
 		if(!infinite) ++i;
 		++reps;
-		if(!noclear) system("clear");
+		if(clear) system("clear");
 		else putchar('\n');
 
 		if(opendoors(initdoors(), vflag ? 1 : 0)) ++wins;
