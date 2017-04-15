@@ -1,6 +1,6 @@
-#Simple reproduction of the Monty Hall problem
+# Simple reproduction of the Monty Hall problem
 
-##Arguments
+## Arguments
 
 -n x specifies the number of times you want it to loop. Defaults to 1 if it's not specified
 
